@@ -26,8 +26,28 @@
 # 필수 요구사항
 IsaacLab
 
-# 실행 예제
+# 환경 설정
+ - API키 설정  
+프로젝트 최상위 디렉터리(예: README.md가 있는 곳)에 .env 파일을 만듭니다.  
+`.env` 파일 예시
 
+```
+# .env 파일 예시
+# 실제 값은 본인 환경에 맞게 수정하세요
+
+GOOGLE_CSE_ID=oooo
+GOOGLE_API_KEY=oooo
+OPENAI_API_KEY=oooo
+
+DATABASE_URL=postgresql://username:password@hostname:port/dbname
+SECRET_KEY=your-secret-key-here
+```
+
+# 실행 예제
+환경 변수 설정이 완료되었다면, 바로 `main.py`를 실행하면 됩니다.
+```
+python main.py
+```
 
 # 데모 및 결과
 ![output](https://github.com/user-attachments/assets/de52a860-8b92-4864-a9fc-9940c4b678de)
